@@ -6,6 +6,7 @@ public class Carro {
     private LocalDate dataCadastro;
     private double valor;
 
+    //gerar os gets e sets
     public String getModelo() {
         return modelo;
     }
@@ -37,10 +38,11 @@ public class Carro {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
     public void imprimir(){
-        System.out.println("modelo = " + modelo);
-        System.out.println("placa = " + placa);
-        System.out.println("dataCadastro = " + dataCadastro);
-        System.out.printf("valorR$  = %.2f\n" + valor);
+        System.out.println("Modelo = " + modelo);
+        System.out.println("Placa = " + placa);
+        System.out.println("Data de Cadastro = " + dataCadastro);
+        System.out.printf("Valor R$ %.2f \n", valor);
     }
 }
